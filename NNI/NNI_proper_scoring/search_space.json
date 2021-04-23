@@ -1,0 +1,20 @@
+{
+	"imputation":{"_type":"choice", "_value":["sample_and_hold", "ffill"]},
+	"missing_threshold":{"_type":"choice", "_value":[0.5, 0.7, 0.8]},
+	"num_of_past_hours":{"_type":"choice", "_value":[6, 12, 18, 24, 30, 36, 48]},
+	"replacement_ratio":{"_type":"choice", "_value":[0, 0.25, 0.5, 0.75, 1]},
+	"extra_padding":{"_type":"choice", "_value":[0, 0.25, 0.5]},
+	"rnn_type":{"_type":"choice", "_value":["LSTM", "GRU"]},
+	"rnn_layers":{"_type":"choice", "_value":[2, 3, 4]},
+	"dense_layers":{"_type":"choice", "_value":[1, 2, 3]},
+	"rnn_layer_size":{"_type":"choice", "_value":[32, 64, 128, 256]},
+	"dense_layer_size":{"_type":"choice", "_value":[32, 64, 128, 256]},
+	"sepsis_weight":{"_type":"choice", "_value":[10, 20, 50, 100]},
+	"rnn_dropout":{"_type":"choice", "_value":[0.3, 0.4, 0.5, 0.6, 0.8]},
+	"dense_dropout":{"_type":"choice", "_value":[0.3, 0.4, 0.5, 0.6, 0.8]},
+	"momentum":{"_type":"choice", "_value":[0, 0.2, 0.4, 0.6, 0.8]},
+	"decay":{"_type":"choice", "_value":[0, 0.01, 0.05, 0.1]},
+	"batch_size":{"_type":"choice", "_value":[32, 64, 96, 128]},
+	"optimizer":{"_type":"choice", "_value":["RMSprop", "Adadelta", "Adam", "SGD"]},
+	"lr":{"_type":"choice", "_value":[0.0001, 0.001, 0.005, 0.01]}
+}

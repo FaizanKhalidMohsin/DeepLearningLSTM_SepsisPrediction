@@ -1,0 +1,4 @@
+Method: 
+	1. Forward fill existing values to replace missing values (no limit)
+	2. MinMaxScaling of all numeric values between 0 and 1
+	3. Assign any remaining missing values to -1
